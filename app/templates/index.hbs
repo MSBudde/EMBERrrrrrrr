@@ -1,0 +1,6 @@
+{{outlet}}
+{{#each model as |todo|}}
+<h1>Todo: {{todo.title}}</h1>
+<p style='border: 1px solid black; width:300px; padding: 10px;'><strong>Description:</strong> <br>{{todo.description}}</p>
+{{/each}}
+{{#create-new-todo newTodo=model createTodo='createTodo'}}{{/create-new-todo}}

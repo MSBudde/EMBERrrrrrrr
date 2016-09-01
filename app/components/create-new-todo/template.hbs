@@ -1,0 +1,14 @@
+{{yield}}
+<h3>Create a New Todo</h3>
+
+<form id="NewTodo">
+    <p>
+      {{input value=newTodo.title placeholder="Title" id='title'}}
+    </p>
+    <p>
+      {{textarea value=newTodo.description placeholder="description" rows="4" cols="25" id='description'}}
+    </p>
+    <p>
+        <button {{action "createTodo" newTodo}}>Publish</button>
+    </p>
+</form>
